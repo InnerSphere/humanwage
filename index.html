@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Human Wage Machine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Human Wage Machine</h1>
+    <p>
+        Welcome, Human<br />
+        You have been assigned to ROTATION.<br />
+        You will be issued CURRENCY at a rate of $7.25 per hour<br />
+    </p>
+    <p>
+        Begin by ROTATING 3600 degrees (10 turns)<br />
+        Continue ROTATING 3600 degrees in the direction indicated.<br />
+        The work circle will turn black when a unit has been processed.<br />
+        Additional rotation will not further process a unit.<br />
+        Units with incomplete rotation will be discarded.<br />
+    </p>
+  <div>Thank you for your human effort of:<div class="timer" id="timer"></div></div>
+  <div class="counter" id="counter">$0.00</div>
+  <div class="degwindow" id="degwindow">0° / 3600°</div>
+  <div class="timedirection" id="timedirection">Rotate: Clockwise >>></div>
+  <div class="crank-container">
+    <svg id="crank" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="80" stroke="#333" stroke-width="12" fill="none" />
+      <line id="handle" x1="100" y1="100" x2="100" y2="20" stroke="#e74c3c" stroke-width="10" stroke-linecap="round" />
+    </svg>
+  </div>
+
+  <div class="successes" id="successes">UNITS PROCESSED: <span id="successes_counter">0</span></div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
